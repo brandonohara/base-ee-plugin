@@ -3,8 +3,8 @@
 	require_once(PATH_THIRD."MODULE_NAME_LOWER/config.MODULE_NAME_LOWER.php");
 	
 	$plugin_info = array(
-		'pi_name' 			=> 'MODULE_NAME_UPPER_NAME',
-		'pi_version' 		=> 'MODULE_NAME_UPPER_VERSION',
+		'pi_name' 			=> MODULE_NAME_UPPER_NAME,
+		'pi_version' 		=> MODULE_NAME_UPPER_VERSION,
 		'pi_author' 		=> 'Brandon OHara',
 		'pi_author_url' 	=> 'http://brandonohara.com/',
 		'pi_description' 	=> '',
