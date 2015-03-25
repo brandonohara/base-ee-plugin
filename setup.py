@@ -18,6 +18,10 @@ for root, dirs, files in os.walk(base):
 	for filename in files:
 	    if filename.endswith(".php"):
 			fileparts = filename.split(".", 2)
+			
+			if fileparts[1] != "module-name":
+				continue
+			
 			new_filename = fileparts[0] + "." + module['MODULE_NAME_LOWER'] + "." + fileparts[2]
 			
 			if filename == new_filename:
