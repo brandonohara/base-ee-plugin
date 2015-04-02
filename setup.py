@@ -36,5 +36,6 @@ for root, dirs, files in os.walk(base):
 			os.remove(filename)
 			
 			continue
-#os.chdir(base)
-#os.remove("setup.py")
+os.chdir(base)
+os.remove("setup.py")
+os.remove("README.md")
