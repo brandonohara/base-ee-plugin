@@ -2,6 +2,7 @@ import sys
 import os
 import string
 import pprint
+import shutil
 
 base = os.getcwd()
 
@@ -39,3 +40,4 @@ for root, dirs, files in os.walk(base):
 os.chdir(base)
 os.remove("setup.py")
 os.remove("README.md")
+shutil.rmtree(".git", ignore_errors=True)
